@@ -1,0 +1,7 @@
+{
+  "name": "nifty50",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

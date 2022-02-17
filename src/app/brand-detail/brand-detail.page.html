@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center" size="small">Strike Price {{currPrice}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen >
+
+  <div style="text-align: center !important;" >
+    <ion-button (click)='onclick()' >Show IV graph</ion-button>
+  </div>
+  <div id="curve_chart"></div> 
+  <div style="text-align: center !important;" *ngIf="show">
+    <ion-button (click)='onclick()'>Today</ion-button>
+    <ion-button>3 Weeks</ion-button>
+  </div>
+
+</ion-content>
+
+<!-- <ion-content fullscreen >
+
+  <div style="text-align: center !important;" >
+    <ion-button (click)='onclick()' >Show IV graph</ion-button>
+  </div>
+  <div id="curve_chart"></div> 
+  <div style="text-align: center !important;" *ngIf="show">
+    <ion-button (click)='onclick()'>Today</ion-button>
+    <ion-button>3 Weeks</ion-button>
+  </div>
+
+</ion-content> -->
+
+<ion-footer class="ion-no-border" ion-padding style="text-align: center !important;">
+  <ion-toolbar>
+    <ion-button color="primary">68%</ion-button>
+    <ion-button color="warning">32%</ion-button>
+  </ion-toolbar>
+</ion-footer>
+
+<!-- *ngIf="onclick()" -->

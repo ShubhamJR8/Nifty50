@@ -1,0 +1,34 @@
+<ion-content [fullscreen]="true">
+  <br><br><br><br>
+
+  
+  <ion-text color="primary">
+    <h2>NIFTY50</h2>
+  </ion-text>
+
+  <br><br>
+
+  <ion-text><h3><span id="a">Market is </span>up 11.52% in last 24h</h3> </ion-text>
+
+  <!-- <ion-text color="secondary"><h3>Market is up 11.52% in last 24h</h3></ion-text> -->
+
+  <br><br>
+
+  <ion-text color="dark"><h3>Market is {{marketStatus}}</h3></ion-text>
+
+  <br><br><br>
+
+  <ion-fab horizontal="center">
+    <ion-fab-button color="light" (click)='goToDetail()'><span id="go">Go</span></ion-fab-button>
+  </ion-fab>
+
+  <br><br><br>
+
+ </ion-content>
+
+ <ion-footer class="ion-no-border" ion-padding>
+  <ion-toolbar >
+    <ion-text color="warning"><h3 id="footer">Trading Time 9am - 5pm</h3></ion-text>
+    <ion-text color="warning"><h3 id="footer">Monday to Friday</h3></ion-text>
+  </ion-toolbar>
+</ion-footer>
